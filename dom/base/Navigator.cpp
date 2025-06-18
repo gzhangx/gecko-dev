@@ -2289,6 +2289,7 @@ dom::PrivateAttribution* Navigator::PrivateAttribution() {
 
 /* static */
 bool Navigator::Webdriver() {
+  return false;
 #ifdef ENABLE_WEBDRIVER
   nsCOMPtr<nsIMarionette> marionette = do_GetService(NS_MARIONETTE_CONTRACTID);
   if (marionette) {
